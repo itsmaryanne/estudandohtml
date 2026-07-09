@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!-- Configurações básicas do documento -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Loja Online</title>
+</head>
+
+<body>
+
+    <!-- Cabeçalho do site -->
+    <header class="header">
+        <h1>Minha Loja Online</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main class="main-content">
+        <section class="products">
+            <h2>Produtos em Destaque</h2>
+
+            <article class="product">
+                <h3>Produto 1</h3>
+                <p>Descrição breve do produto.</p>
+            </article>
+
+            <article class="product">
+                <h3>Produto 2</h3>
+                <p>Descrição breve do produto.</p>
+            </article>
+        </section>
+        <section>
+            <form action="" method="post">
+                <fieldset>
+                    <legend>Dados do Usuário</legend>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome!">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="exemplo@email.com">
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha" name="senha" required minlength="6">
+                    <label for="idade">Idade:</label>
+                    <input type="number" id="idade" name="idade" min="18" required>
+                </fieldset>
+                <fieldset>
+                    <legend>Categorias e Preferencias</legend>
+                    <label for="categoria">Categoria de Interesse:</label>
+                    <select name="categoria" id="categoria">
+                        <option value="eletronico">Eletrônicos</option>
+                        <option value="mobilia">Mobiliário</option>
+                        <option value="roupas">Roupas</option>
+                    </select>
+                    <br>
+                    <label for="preferencias">Preferencias:</label>
+                    <label><input type="checkbox" name="promo">Receber promoções por email</label>
+                    <label><input type="checkbox" name="novidades">Receber novidades por email</label></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Tipo de Cliente</legend>
+                    <label for="">
+                        <input type="radio" name="tipo" value="pf" required>Pessoa Física</label>
+                    </label>
+                    <label for=""><input type="radio" name="tipo" value="pj">Pessoa Jurídica</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Mensagem</legend>
+                    <textarea name="mensagem" id="mensagem"></textarea>
+                </fieldset>
+                <button type="submit">Enviar Formulário</button>
+            </form>
+        </section>
+
+        <section id="contato">
+            <p>Meu contato: whatsapp - 21 9 12345678</p>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <p>&copy; 2026 Minha Loja Online</p>
+    </footer>
+
+</body>
+
+</html>
